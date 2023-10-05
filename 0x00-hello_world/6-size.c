@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	puts("Size of a char: %zu byte(s)", sizeof(char));
-	puts("Size of in int: %zu byte(s)", sizeof(int));
-	puts("Size of a long int: %zu byte(s)", sizeof(long int));
-	puts("Size of a long long int: %zu byte(s)", sizeof(long long int));
-	puts("Size of float: %zu byte(s)", sizeof(float));
+	printf("Size of a char: %zu byte(s)\n", sizeof(char));
+	printf("Size of in int: %zu byte(s)\n", sizeof(int));
+	printf("Size of a long int: %zu byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %zu byte(s)\n", sizeof(long long int));
+	printf("Size of float: %zu byte(s)\n", sizeof(float));
 	return (0);
 }
