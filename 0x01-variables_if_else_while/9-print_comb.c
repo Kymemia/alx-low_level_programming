@@ -17,7 +17,7 @@ int main(void)
 		if (lD < 10)
 		{
 			putchar(',');
-			purchar(' ');
+			putchar(' ');
 		}
 	}
 
