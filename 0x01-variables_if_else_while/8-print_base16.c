@@ -11,7 +11,7 @@ int main(void)
 {
 	int berk = 0;
 
-	for (int berk = 0; berk <= 15; berk++)
+	for (berk = 0; berk <= 15; berk++)
 	{
 		if (berk < 10)
 		{
