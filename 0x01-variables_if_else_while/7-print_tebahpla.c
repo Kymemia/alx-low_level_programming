@@ -14,7 +14,7 @@ int main(void)
 	while (loki >= 'a')
 	{
 		putchar(loki);
-		loki++;
+		loki--;
 	}
 	putchar('\n');
 	return (0);
