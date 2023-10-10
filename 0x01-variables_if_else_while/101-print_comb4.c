@@ -28,7 +28,7 @@ int main(void)
 				putchar(new_james);
 				putchar(new_jeremy);
 				putchar(new_hammond);
-				if (james != 7 || jeremy != 9 || hammond != 0)
+				if (james != 7 || jeremy != 8 || hammond != 9)
 				{
 					putchar(',');
 					putchar(' ');
