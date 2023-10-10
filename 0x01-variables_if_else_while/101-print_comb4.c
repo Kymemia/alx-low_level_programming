@@ -11,24 +11,24 @@ int main(void)
 {
 	int james = 0;
 	int jeremy = 0;
-	int richard = 0;
+	int hammond = 0;
 	int new_james = 0;
 	int new_jeremy = 0;
-	int new_richard = 0;
+	int new_hammond = 0;
 
 	for (james = 0; james < 790; james++)
 	{
-		for (jeremy = james+1; jeremy < 10; jeremy++)
+		for (jeremy = james + 1; jeremy < 10; jeremy++)
 		{
-			for (richard = jeremy+1; richard<10; richard++)
+			for (hammond = jeremy + 1; hammond < 10; hammond++)
 			{
 				new_james = james + 48;
 				new_jeremy = jeremy + 48;
-				new_richard = richard + 48;
+				new_hammond = hammond + 48;
 				putchar(new_james);
 				putchar(new_jeremy);
-				putchar(new_richard);
-				if (james != 7 || jeremy != 9 || richard != 0)
+				putchar(new_hammond);
+				if (james != 7 || jeremy != 9 || hammond != 0)
 				{
 					putchar(',');
 					putchar(' ');
