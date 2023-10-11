@@ -8,14 +8,16 @@
 
 int main(void)
 {
-	print_alphabet()
-	{
-		for(letter = 'A'; letter <= 'Z'; letter++)
+	print_alphabet();
+	return (0);
+}
+	void print_alphabet(void)
+{
+		for(letter = 'a'; letter <= 'z'; letter++)
 		{
-			_putchar("%c", letter);
+			_putchar(letter);
 		}
-	}
-
+	
 	_putchar('\n');
 	return (0);
 }
