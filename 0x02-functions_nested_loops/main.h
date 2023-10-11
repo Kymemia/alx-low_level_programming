@@ -1,1 +1,1 @@
-int putchar
+void printMessage(message);

@@ -9,6 +9,6 @@
 
 int main(void)
 {
-	putchar("\_putchar");
+	printMessage("\_putchar");
 	return (0);
 }
