@@ -8,14 +8,11 @@
 
 void times_table(void)
 {
-	int num = 0;
-
-	while (num <= 10)
+	int num;
+	for (num = 0; num <= 10; num++)
 	{
 		int product = 9 * num;
-
-		_putchar (product + '0');
-		_putchar ('\n');
-		num++;
+		_putchar(product + '0');
+		_putchar('\n');
 	}
 }
