@@ -6,12 +6,12 @@
  * Return: Always 0 (Success)
  */
 
-int print_last_digit(int)
+int print_last_digit(int num)
 {
 	int lastLast;
 
-	lastLast = int % 10;
-	_putchar("%d" + lastLast);
+	lastLast = num % 10;
+	_putchar('0' + lastLast);
 
 	return (0);
 }
