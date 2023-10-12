@@ -9,13 +9,5 @@
 
 int _abs(int)
 {
-	if (int < 0)
-	{
-		abs(int);
-	}
-	else 
-	{
-		return int;
-	}
-}
-	
+	int = abs(int);
+}	
