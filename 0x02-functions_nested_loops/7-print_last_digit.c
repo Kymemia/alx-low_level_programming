@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * Function print_last_digit - prints last digit of number
+ * print_last_digit - prints last digit of number
  *
- * Return: Always 0 (Success)
+ * @y: integer to be checked
+ *
+ * Return: The last digit
  */
 
-int print_last_digit(int num)
+int print_last_digit(int y)
 {
-	int lastLast;
+	int lastLast = y % 10;
 
-	lastLast = num % 10;
 	_putchar(lastLast + '0');
 
 	return (lastLast);
