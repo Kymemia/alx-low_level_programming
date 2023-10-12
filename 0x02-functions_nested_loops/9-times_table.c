@@ -17,8 +17,22 @@ void times_table(void)
 		for (numm = 0; numm <= 9; numm++)
 		{
 			product = num * numm;
-			_putchar(product + '0');
+			if (numm > 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			if (product < 10)
+			{
+				_putchar(' ');
+				_putchar(product + '0');
 		}
+			else
+			{
+				_putchar(product / 10 + '0');
+				_putchar(product % 10 + '0');
+			}
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
