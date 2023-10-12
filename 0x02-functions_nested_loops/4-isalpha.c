@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * Function _isalpha - Checks for alphabetic char.
