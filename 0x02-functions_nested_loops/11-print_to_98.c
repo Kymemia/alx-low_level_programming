@@ -12,7 +12,10 @@ void print_to_98(int n)
 
 	for (nat = n; nat <= 98; nat++)
 	{
-		printf("%d", nat);
+		printf("%d\n", nat);
 	}
-	printf("\n");
+		for (nat = n; nat >= 98; nat--)
+		{
+		printf("%d\n", nat);
+	}
 }
