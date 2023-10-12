@@ -3,7 +3,7 @@
 /**
  * Function print_sign - prints sign of number
  *
- * int n - character to be checked
+ * @n: integer to be checked
  */
 
 int print_sign(int n)
