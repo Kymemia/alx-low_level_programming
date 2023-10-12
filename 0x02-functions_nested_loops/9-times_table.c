@@ -9,10 +9,12 @@
 void times_table(void)
 {
 	int num;
+
 	while (num <= 10)
 	{
 		int product = 9 * num;
-		_putchar (product = '0');
+
+		_putchar (product + '0');
 		_putchar ('\n');
 		num++;
 	}
