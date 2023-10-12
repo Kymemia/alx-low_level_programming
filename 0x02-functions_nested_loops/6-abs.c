@@ -1,13 +1,16 @@
 #include "main.h"
 
 /**
- * Function - computes absolute value of integer
+ * _abs - computes absolute value of integer
  *
- * int - value to be computed
+ * @fig: integer to be computed
  *
+ * Return: absolute value
  */
 
-int _abs(int)
+int _abs(int fig)
 {
-	int = abs(int);
-}	
+	if (fig < 0)
+		return (-fig);
+	return (fig);
+}
