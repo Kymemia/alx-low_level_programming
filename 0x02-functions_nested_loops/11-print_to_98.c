@@ -14,5 +14,5 @@ void print_to_98(int n)
 	{
 		printf("%d", nat);
 	}
-	printf("98\n");
+	printf("\n");
 }
