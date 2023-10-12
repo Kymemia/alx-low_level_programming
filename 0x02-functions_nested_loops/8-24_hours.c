@@ -1,15 +1,23 @@
 #include "main.h"
 
 /**
- * Function - prints every minute of the day
- * void jack_bauer: character to print output
- * return: Always 0 (Success)
+ * jack_bauer - prints every minute of the day
+ *
+ * Return: Always 0 (Success)
  */
 
 void jack_bauer(void)
 {
-	char jack_bauer;
+	int hour;
+	int min;
 
-	for (jack_bauer = 00 : 00; jack_bauer <= 23:59; jack_bauer++)
-		_putchar(jack_bauer);
+	for (hour = 0; hour < 24; hour++)
+	{
+		for (min = 0; min < 60; min++)
+		{
+			_putchar("%02d:%02dn\n", hour, min);
+		}
+	}
+	_putchar('\n');
+	return (0);
 }
