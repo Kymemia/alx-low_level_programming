@@ -33,6 +33,6 @@ int main(void)
 {
 	long num = 612852475143;
 
-	printf("The largest prime factor of %ld is: %ld\n", num, optimusPrime(num));
+	printf("%ld\n", optimusPrime(num));
 	return (0);
 }
