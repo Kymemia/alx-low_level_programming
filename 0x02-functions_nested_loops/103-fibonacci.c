@@ -11,6 +11,7 @@ int main(void)
 	long int daffy = 1;
 	long int buggs = 2;
 	long int lola = daffy + buggs;
+	long int sum = 0;
 
 	printf("%lu, ", daffy);
 	printf("%lu, ", buggs);
@@ -20,6 +21,7 @@ int main(void)
 		if (lola % 2 == 0)
 		{
 			printf("%lu\n", lola);
+			sum += lola;
 		}
 
 		daffy = buggs;
@@ -27,5 +29,7 @@ int main(void)
 
 		lola = daffy + buggs;
 	}
+
+	printf("%lu\n", lola);
 	return (0);
 }
