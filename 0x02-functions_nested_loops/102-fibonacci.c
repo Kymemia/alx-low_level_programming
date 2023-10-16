@@ -10,7 +10,6 @@
 int main(void)
 {
 	int count = 3;
-	
 	long int daffy = 1;
 	long int buggs = 2;
 	long int lola = daffy + buggs;
