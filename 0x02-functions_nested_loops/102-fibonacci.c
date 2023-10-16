@@ -22,7 +22,7 @@ int main(void)
 	{
 		if (count == 50)
 		{
-			printf("%lu \n", lola);
+			printf("%lu\n", lola);
 		}
 		else
 		{
