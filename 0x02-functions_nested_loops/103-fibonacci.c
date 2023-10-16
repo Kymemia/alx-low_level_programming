@@ -9,12 +9,12 @@
 
 long int allaDat(int limit)
 {
-	if (limit < 2)
-		return (0);
-
 	long int ef1 = 0;
 	long int ef2 = 2;
 	long int sum = ef1 + ef2;
+	
+	if (limit < 2)
+		return (0);
 
 	while (ef2 <= limit)
 	{
