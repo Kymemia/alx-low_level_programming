@@ -1,10 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * Description: prints sum of even-valued terms in Fibonacci sequence
- * Return: 0
+ * main - Entry point of code
+ * Description: This function prints sum
+ * of even-valued terms in Fibonacci sequence
+ * Return: sum of even values
  */
+
+long int allaDat(int limit)
+{
+	if (limit < 2)
+		return (0);
+
+	long int ef1 = 0;
+	long int ef2 = 2;
+	long int sum = ef1 + ef2;
+
+	while (ef2 <= limit)
+	{
+		long int ef3 = 4 * ef2 + ef1;
+
+		if (ef3 > limit)
+			break;
+
+		ef1 = ef2;
+		ef2 = ef3;
+		sum += ef2;
+	}
+
+	return (sum);
+}
 
 int main(void)
 {
