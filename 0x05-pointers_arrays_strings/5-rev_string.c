@@ -18,5 +18,4 @@ void rev_string(char *s)
 			s[ll - yy - 1] = temp;
 		}
 	}
-	_putchar('\n');
 }
