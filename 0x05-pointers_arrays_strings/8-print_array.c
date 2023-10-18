@@ -10,9 +10,23 @@ void print_array(int *a, int n)
 
 	for (rr = 0; rr < n; rr++)
 	{
-		if (rr < n - 1)
+		int num = a[rr];
+		int div = 1;
+		int temp = num;
+
+		while (temp > 9)
 		{
-			_putchar(a[rr] + '0');
+			temp /= 10;
+			div *= 10;
+		}
+		while (div >= 1)
+		{
+			_putchar(num / div + '0');
+			num %= div;
+			div /= 10;
+		}
+		if (rr < n -1)
+		{
 			_putchar(',');
 			_putchar(' ');
 		}
