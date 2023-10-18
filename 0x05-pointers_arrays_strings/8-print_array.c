@@ -14,6 +14,11 @@ void print_array(int *a, int n)
 		int div = 1;
 		int temp = num;
 
+		if (num < 0)
+		{
+			_putchar('-');
+			num *= -1;
+		}
 		while (temp > 9)
 		{
 			temp /= 10;
@@ -25,7 +30,7 @@ void print_array(int *a, int n)
 			num %= div;
 			div /= 10;
 		}
-		if (rr < n -1)
+		if (rr < n - 1)
 		{
 			_putchar(',');
 			_putchar(' ');
