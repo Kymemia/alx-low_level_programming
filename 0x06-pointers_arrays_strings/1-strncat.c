@@ -5,7 +5,7 @@
  * _strncat - concatenates two strings
  * @dest: string to be concatenated
  * @n: string to be concatenated
- * Return: concatenated string
+ * Return: dest concatenated string
  */
 char *_strncat(char *dest, char *src, int n)
 {
