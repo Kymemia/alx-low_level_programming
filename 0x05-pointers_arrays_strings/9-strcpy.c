@@ -12,10 +12,6 @@ char *_strcpy(char *dest, char *src)
 	int ww = 0;
 	int ploombe;
 
-	while (dest[destH] != '\0')
-	{
-		destH++;
-	}
 	while (src[ww] != '\0')
 	{
 		dest[destH + ww] = src[ww];
