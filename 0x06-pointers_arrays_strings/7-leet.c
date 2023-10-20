@@ -7,21 +7,31 @@
 char *leet(char *str)
 {
 	int ww = 0;
+	char zagadat;
 
-	while (str[ww] != '\0')
+	while ((zagadat = str[ww]) != '\0')
 	{
-		char zagadat = str[ww];
-
-		if (zagadat == 'a' || zagadat == 'A')
-			str[ww] = '4';
-		else if (zagadat == 'e' || zagadat == 'E')
-			str[ww] = '3';
-		else if (zagadat == 'o' || zagadat == 'O')
-			str[ww] = '0';
-		else if (zagadat == 't' || zagadat == 'T')
-			str[ww] = '7';
-		else if (zagadat == 'l' || zagadat == 'L')
-			str[ww] = '1';
+		switch (zagadat)
+		{
+			case 'a':
+			case 'A':
+				str[ww] = '4';
+				break;
+			case 'e':
+			case 'E':
+				str[ww] = '3';
+				break;
+			case 'o':
+			case 'O':
+				str[ww] = '0';
+				break;
+			case 'l':
+			case 'L':
+				str[ww] = '7';
+				break;
+			default:
+				break;
+		}
 		ww++;
 	}
 	return (str);
