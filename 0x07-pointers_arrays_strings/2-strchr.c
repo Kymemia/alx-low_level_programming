@@ -4,7 +4,7 @@
  * _strchr - locates a character in a string
  * @s: string to be worked on
  * @c: string to be worked on
- * Return: 0 if string isn't found
+ * Return: NULL if string isn't found
  */
 char *_strchr(char *s, char c)
 {
@@ -15,5 +15,5 @@ char *_strchr(char *s, char c)
 		return (s);
 	}
 	}
-	return (0);
+	return (NULL);
 }
