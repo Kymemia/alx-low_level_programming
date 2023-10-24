@@ -9,7 +9,7 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int ww;
+	unsigned int ww = 0;
 
 	do {
 		dest[ww] = src[ww];
