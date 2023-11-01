@@ -8,11 +8,13 @@
  */
 char *_strdup(char *str)
 {
+	char *clone;
+	
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	char *clone = strdup(str);
+	clone = strdup(str);
 
 	if (clone == NULL)
 	{
