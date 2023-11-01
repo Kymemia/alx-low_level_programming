@@ -8,6 +8,10 @@
  */
 char *_strdup(char *str)
 {
+	if (str == Null)
+	{
+		return (NULL);
+	}
 	char *clone = strdup(str);
 
 	if (clone == NULL)
