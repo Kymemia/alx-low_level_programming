@@ -1,9 +1,13 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	while (argc --)
-		printf("%s\n", *argv++);
-	exit (EXIT_SUCCESS);
+	(void) argv;
+	if (argc > 0)
+	{
+		printf("%d\n", argc - 1);
+	}
+	return (0);
 }
