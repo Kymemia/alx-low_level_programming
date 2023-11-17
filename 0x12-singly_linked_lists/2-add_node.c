@@ -1,32 +1,29 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <crtdbg.h>
-void insert_beg(Node** tail, int value)
+#include <string.h>
+/**
+ * add_node - adds node @ the start of list
+ * @head: pointer to be checked
+ * @str: string to be checked
+ * Return: Null if fail,
+ * address of new node
+ */
+list_t *add_node(list_t **head, const char *str)
 {
-	Node* new_node = malloc(sizeof(Node));
-	if (new_node == NULL)
-	{
-		exit(1);
-		return;
-	}
-	new_node -> = value;
-	new_node -> prev = NULL;
-	new_node -> next = *tail;
-	*tail = new_node;
-	*head = new_node;
-}
-int main(int argc, char* argv[])
-{
-	Node* tail = NULL;
-	Node* head = NULL;
+	list_t *nexNode;
 
-	init(&tail, &head, Alexandro);
-	insert_beg(&tail, seraphim);
-	insert_beg(&tail, msechu);
-	for (Node* curr = head; curr != NULL; curr = curr->prev)
+	if (!head || !str)
 	{
-		_putchar(curr->x);
+		return (NULL);
 	}
-	deallocate(&tail, &head);
-	return (0);
+	nexNode = malloc(sizeof(list_t));
+	if (!nexNode)
+	{
+		return (NULL);
+	}
+	nexNode->str = strdup(str);
+	nexNode->len = strlen(str);
+	nexNode->next = *head;
+	*head = nexNode;
+	return (nexNode);
 }
