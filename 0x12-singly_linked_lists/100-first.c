@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * before_main- print b4 main
+ * before_main- print before main
  */
 void __attribute__ ((constructor)) before_main()
 {
