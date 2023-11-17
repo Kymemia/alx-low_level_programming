@@ -1,7 +1,12 @@
 #include "lists.h"
 #include <stdlib.h>
 #include <string.h>
+
 /**
+ * add_node_end- adds a new node at the end of the list
+ * @head: ptr to be checked
+ * @str: the str to be added in the node
+ * Return: new_node if successfull else NULL
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
