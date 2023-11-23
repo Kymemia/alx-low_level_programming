@@ -1,12 +1,17 @@
 #include "lists.h"
 #include "stdlib.h"
 /**
+ * insert_nodeint_at_index - inserts node @ given position
+ * @head: pointer to be checked
+ * @idx: int to be checked
+ * @n: int to be checked
+ * Return: Null if failed, else inserts node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new_node;
 	listint_t *plus;
-	unsigned int count = 1;
+	unsigned int count = 0;
 
 	if (head)
 	{
@@ -19,8 +24,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		if (idx > 0)
 		{
 			plus = *head;
-			do
-			{
+			do {
 				if (count == idx)
 				{
 					new_node->next = plus->next;
@@ -42,6 +46,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 				*head = new_node;
 			return (new_node);
 			}
-		return (NULL);
 	}
+	return (NULL);
 }
