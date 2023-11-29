@@ -5,7 +5,7 @@
  * get_bit - returns value of index's given bit
  * @n: int to be checked
  * @index: int to be checked
- * Return: -1 if error occured,
+ * Return: -1 if error occurred,
  * else return accurate value
  */
 int get_bit(unsigned long int n, unsigned int index)
