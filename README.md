@@ -1,0 +1,1 @@
+My first Static Library
