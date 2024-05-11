@@ -6,7 +6,7 @@
  * @array: pointer to the first element of the array to be searched
  * @size: number of elements in array
  * @value: value to search for
- * Return: -1 if calue isn't present in array || array is NULL,
+ * Return: -1 if value isn't present in array || array is NULL,
  * else return correct value being searched
  */
 
