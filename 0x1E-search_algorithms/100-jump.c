@@ -43,7 +43,7 @@ int jump_search(int *array, size_t size, int value)
 	}
 
 	current = min(hop, (int)size) - 1;
-	printf("Value found between indexes [%d] and [%d]\n", prev - hop + 1, current);
+	printf("Value found between indexes [%d] and [%d]\n", prev, current);
 
 	for (i = prev - hop + 1; i <= current; i++)
 	{
