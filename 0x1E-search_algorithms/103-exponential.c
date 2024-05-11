@@ -17,7 +17,7 @@ int le_binary_search(int *array, size_t left, size_t right, int value)
 
 	while (right >= left)
 	{
-		printf("Searching in array:");
+		printf("Searching in array: ");
 		for (x = left; x <= right; x++)
 		{
 			if (x == right)
@@ -60,8 +60,8 @@ int exponential_search(int *array, size_t size, int value)
 		x = x * 2;
 	}
 
-	printf("Value found between indexes [%lu]
-			and [%lu]\n", x / 2, (x < size) ? x : size - 1);
+	printf("Value found between indexes [%lu] and [%lu]\n",
+			x / 2, (x < size) ? x : size - 1);
 
 	return (le_binary_search(array, x / 2, (x < size) ? x : size - 1, value));
 }
