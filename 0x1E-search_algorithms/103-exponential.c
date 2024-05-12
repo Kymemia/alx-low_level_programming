@@ -26,7 +26,7 @@ int le_binary_search(int *array, size_t left, size_t right, int value)
 			if (x == right)
 				printf(" %d\n", array[x]);
 			else
-				printf(" %d", array[x]);
+				printf(" %d,", array[x]);
 		}
 		mid = left + (right - left) / 2;
 
